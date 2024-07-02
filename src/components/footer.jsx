@@ -1,6 +1,11 @@
+import { SparkleIcon } from "lucide-react"
+
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+      <SparkleIcon />
+      <span><a href="">Events</a></span>
+    </div>
   )
 }
 
