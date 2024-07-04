@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex gap-4 text-gray-600">
         <SparkleIcon />
       <span><a href="">Events</a></span>
-      <span><a href="">contact</a></span>
+      <span><a href="">Contact</a></span>
       <span></span>
       </div>
       <div className="flex gap-4 text-gray-600">
