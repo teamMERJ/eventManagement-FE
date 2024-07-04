@@ -80,10 +80,10 @@ const Events = () => {
         {isloading ? (
           <div>Loading...</div>
         ) : (
-          <div className="grid grid-cols-4 gap-5 px-10">
+          <div className="grid grid-cols-3 gap-10 px-10">
             {events.map((event) => (
               <EventCard
-                flier={`https://savefiles.org/${event.flier}?shareable_link=253`}
+                flier={`https://savefiles.org/${event.flier}?shareable_link=287`}
                 eventName={event.name}
                 date={event.date}
                 price={event.price}
