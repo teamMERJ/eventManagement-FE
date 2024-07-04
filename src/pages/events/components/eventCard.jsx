@@ -9,9 +9,9 @@ import { CalendarDaysIcon, HeartIcon, MapPinIcon, TicketIcon } from "@heroicons/
 // EVENT DETAILS PAGE
 
 // Alternatively
-const EventCard = ({ flier, eventName, date, price, location }) => {
+const EventCard = ({ flier, eventName, date, price, location , handleClick}) => {
   return (
-    <div className="flex flex-col relative rounded-[10px] shadow-current overflow-hidden ">
+    <div className="flex flex-col relative rounded-[10px] shadow-current overflow-hidden " onClick={handleClick}>
       <div className="relative h-2/3">
         <Link>
           <img src={flier} alt="" className="w-full h-[300px] object-cover" />
