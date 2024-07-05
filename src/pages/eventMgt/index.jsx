@@ -36,7 +36,7 @@ const EventsMgt = () => {
       <EventMgtHero />
 
       <div className="px-10 py-10">
-      <div className="flex justify-center items-center py-10 px-20 font-sans text-5xl font-medium">Update Events</div>
+      <div className="flex justify-center items-center py-10 px-20 font-sans text-5xl font-medium">Make Updates Below</div>
         {isloading ? (
           <div>Loading...</div>
         ) : (

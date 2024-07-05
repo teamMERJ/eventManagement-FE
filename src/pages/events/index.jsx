@@ -33,6 +33,7 @@ const Events = () => {
       "https://eventmanagement-be.onrender.com/events"
     );
     console.log(response);
+    console.log(response.data[0].date)
     if (response.status === 200) {
       setEvents(response.data);
     } else {
@@ -45,6 +46,15 @@ const Events = () => {
   useEffect(() => {
     getEvents();
   }, []);
+
+ const formatDate = (eventDate) => {
+  const date = new Date(eventDate)
+  return date
+ }
+
+ console.log('huhuh', formatDate('2024-09-22T00:00:00.000Z'))
+
+
 
   return (
     <div className="bg-[rgba(231,234,238,0.83)]">

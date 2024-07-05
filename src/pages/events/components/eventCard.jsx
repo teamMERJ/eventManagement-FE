@@ -6,12 +6,6 @@ import {
   TicketIcon,
 } from "@heroicons/react/24/outline";
 
-// DO  THE MAPPING HERE
-
-// THINGS TO BE DONE
-// MAKE SEARCH BAR WORK
-// DO FILTER BY DATE (datefiltercomponent)
-// EVENT DETAILS PAGE
 
 // Alternatively
 const EventCard = ({
@@ -24,7 +18,7 @@ const EventCard = ({
 }) => {
   return (
     <div
-      className="flex flex-col relative rounded-xl shadow-current overflow-hidden bg-white "
+      className="flex flex-col relative rounded-xl shadow-current overflow-hidden bg-[#FEF0FE] "
       onClick={handleClick}
     >
       <div className="relative h-[200px] rounded-xl">
