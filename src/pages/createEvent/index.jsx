@@ -18,22 +18,22 @@ const CreateEvent = () => {
   return (
     <div className="mx-auto pt-5 px-40 bg-[#FEF0FE] text-white shadow-lg">
       <div className="flex">
-        <div className="w-1/3 p-2">
+        <div className="w-1/3 p-2 mt-4">
           <div className="bg-[rgba(231,238,234,0.83)] rounded-lg overflow-hidden">
             <img src={invite2Img} alt="Flier" className="w-full h-full object-cover" />
           </div>
         </div>
 
         <div className="w-2/3 pl-8 pr-10 m-20 ">
-
+          <div className="flex w-full px-3 mb-6 items-center justify-center py-2 mt-4 rounded-lg shadow-md bg-[#443b3b] text-[22px] text-white"><h3>Create Your Event Here</h3></div>
           <form onSubmit={createEvent}>
-          <label className="block text-lg text-black" htmlFor="name">Event Name</label>
+          <label className="block text-lg text-gray-600" htmlFor="name">Event Name</label>
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Type the name of your event here"
-            className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
+            className="w-full border-[#8f3e3e] border-2 text-gray-600px-4 py-2 mb-4 rounded-lg"
           />
 
           <div className="flex justify-between items-center mb-4">
@@ -43,7 +43,7 @@ const CreateEvent = () => {
                 type="date"
                 id="date" 
                 name="date"
-                className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
+                className="w-full border-[#8f3e3e] border-2 text-gray-600 px-4 py-2 mb-4 rounded-lg"
               />
             </div>
             <div className="w-1/2 pl-2">
@@ -53,7 +53,7 @@ const CreateEvent = () => {
                 id="price"
                 name="price"
                 placeholder="GHC"
-                className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
+                className="w-full border-[#8f3e3e] border-2 text-gray-600 px-4 py-2 mb-4 rounded-lg"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ const CreateEvent = () => {
             id="location"
             name="location"
             placeholder="Add Event Location"
-            className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
+            className="w-full border-[#8f3e3e] border-2 text-gray-600 px-4 py-2 mb-4 rounded-lg"
           />
 
         <label className="block text-lg text-black" htmlFor="description">Description</label>
@@ -72,7 +72,7 @@ const CreateEvent = () => {
             id="description"
             name="description"
             placeholder="Describe event"
-            className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
+            className="w-full border-[#8f3e3e] border-2 text-gray-600 px-4 py-2 mb-4 rounded-lg"
           />
           {/* <textarea
             placeholder="Add Description"
@@ -80,9 +80,9 @@ const CreateEvent = () => {
           ></textarea> */}
           <div className="flex flex-col mb-4">
 
-            <div>
-              <label htmlFor="flier">Choose flier</label>
-              <input  type="file" id="flier" name="flier"/>
+            <div className="">
+              <label htmlFor="flier" className=" text-gray-400">Choose flier</label>
+              <input className="text-gray-400" type="file" id="flier" name="flier"/>
             </div>
             
             {/* <div> class="flex items-center space-x-6"
@@ -107,11 +107,14 @@ const CreateEvent = () => {
             Create Event
           </button>
           </form>
-          
-
-          <h5><Link >Manage Events</Link></h5>
+          <div className="">
+            <h5 className=" flex w-1/3 px-3 items-center justify-center py-2 mt-4 rounded-lg shadow-md hover:bg-[#c29b46] transition duration-300 bg-[#554c4c69] text-white"><Link to="/events/manage">Manage Old Events</Link></h5>
+            </div>
         </div>
+        
       </div>
+      
+      
     </div>
   )
 }
