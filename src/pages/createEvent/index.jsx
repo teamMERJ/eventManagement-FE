@@ -22,16 +22,17 @@ const CreateEvent = () => {
 
           <div className="flex justify-between items-center mb-4">
             <div className="w-1/2 pr-2">
-              <label className="block text-black">Start</label>
+              <label className="block text-black">Date</label>
               <input
                 type="datetime-local"
                 className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
               />
             </div>
             <div className="w-1/2 pl-2">
-              <label className="block text-black">End</label>
+              <label className="block text-black">Price</label>
               <input
-                type="datetime-local"
+                type="text"
+                placeholder="GHC"
                 className="w-full border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
               />
             </div>
@@ -47,14 +48,14 @@ const CreateEvent = () => {
             className="w-full  border-[#8f3e3e] border-2 text-black px-4 py-2 mb-4 rounded-lg"
           ></textarea>
           <div className="flex flex-col mb-4">
-            <div className="w-1/3 mb-8">
+            {/* <div className="w-1/3 mb-8">
               <label className="block text-black">Price</label>
               <input
                 type="text"
                 placeholder="GHC"
                 className="w-full  border-[#8f3e3e] border-2 text-black px-4 py-2 rounded-lg"
               />
-            </div>
+            </div> */}
             <form class="flex items-center space-x-6">
               <div class="shrink-0">
                 <img class="h-16 w-16 object-cover rounded-full" src="" alt="Current flyer" />
@@ -76,6 +77,8 @@ const CreateEvent = () => {
           >
             Create Event
           </button>
+
+          <h5><Link >Manage Events</Link></h5>
         </div>
       </div>
     </div>
