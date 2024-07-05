@@ -1,4 +1,3 @@
-import { Search } from "lucide-react";
 import {
   eventEightImg,
   eventElevenImg,
@@ -16,7 +15,6 @@ import {
 import EventCard from "./components/eventCard";
 import EventHero from "./components/eventHero";
 import EventSearchBar from "./components/eventSearchBar";
-import EventDateFilter from "./components/eventDateFilter";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -53,28 +51,9 @@ const Events = () => {
       <EventHero />
 
       <div className="px-10 py-10">
+      <div className="flex justify-center items-center py-10 px-20 font-sans text-5xl font-medium">Discover Events</div>
         <div className="flex justify-center">
-          <div className="w-1/2">
-            <label htmlFor="search" className="sr-only">
-              Search
-            </label>
-            <div className="flex items-center">
-              <span>
-                <Search className="text-black h-6 w-6" />
-              </span>
-              <input
-                id="search"
-                placeholder="search for an event name, location, price"
-                type="text"
-                name="search"
-                className="pl-10 pr-4 border rounded-lg text-black border-gray-300 focus:outline-none "
-              />
-            </div>
-          </div>
           <EventSearchBar />
-          <div className="w-1/2">
-            <EventDateFilter />
-          </div>
         </div>
 
         {isloading ? (
