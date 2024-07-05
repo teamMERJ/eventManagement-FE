@@ -1,5 +1,5 @@
 import { heroVid } from "../../assets"
-
+import { Link } from "react-router-dom"
 const Landing = () => {
   return (
 
@@ -14,7 +14,7 @@ const Landing = () => {
           Set up an event page, invite friends and <br />sell tickets. Host a memorable event <br />today.
         </p>
         <button className="mt-6 px-6 py-3 bg-black text-white rounded-lg shadow-md hover:bg-gray-800 transition duration-300">
-          <a href="/events/create">Create Your First Event</a>
+          <Link to="/events/create">Create Your First Event</Link>
         </button>
       </div>
 
