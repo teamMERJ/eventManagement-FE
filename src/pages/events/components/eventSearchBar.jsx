@@ -35,14 +35,9 @@ const EventSearchBar = () => {
           >
             <option value="Webiner">Zoom</option>
             <option value="Church">Asemblies of God</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
-            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Webinar</option>
+            <option value="Webiner">MEST</option>
+            
             
           </select>
         </div>
