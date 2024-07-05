@@ -9,6 +9,7 @@ import Login from './pages/login'
 import Footer from './components/footer'
 import RootLayout from './layout/rootLayout'
 import EventDetails from './pages/eventDetails'
+import EventsMgt from './pages/eventMgt'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         { index: true, element: <Landing /> },
         { path: '/events', element: <Events /> },
         { path: '/events/create', element: <CreateEvent /> },
+        { path: '/events/manage', element: <EventsMgt /> },
         {path: '/events/details/:id', element: <EventDetails />},
         { path: '/signup', element: <SignUp /> },
         { path: '/login', element: <Login /> },

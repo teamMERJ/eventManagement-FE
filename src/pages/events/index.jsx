@@ -1,4 +1,3 @@
-import { Search } from "lucide-react";
 import {
   eventEightImg,
   eventElevenImg,
@@ -16,7 +15,6 @@ import {
 import EventCard from "./components/eventCard";
 import EventHero from "./components/eventHero";
 import EventSearchBar from "./components/eventSearchBar";
-import EventDateFilter from "./components/eventDateFilter";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";

@@ -7,12 +7,22 @@ const EventSearchBar = () => {
       <form className="flex gap-4 items-end">
         <div className="flex flex-col">
           <label className="text-[#6f6f6f] font-poppins font-semibold mb-2">
-            Search by Keyword
+            Search by Name
           </label>
           <input
             className="px-4 py-2 focus:outline-none border-solid border-2 border-slate-200 rounded-md"
             type="text"
-            placeholder="SEARCH"
+            placeholder="Name of Event"
+          />
+        </div>
+        <div className="flex flex-col">
+          <label className="text-[#6f6f6f] font-poppins font-semibold mb-2">
+            Search Price
+          </label>
+          <input
+            className="px-4 py-2 focus:outline-none border-solid border-2 border-slate-200 rounded-md"
+            type="text"
+            placeholder="What's your budget?"
           />
         </div>
         <div className="flex flex-col">
