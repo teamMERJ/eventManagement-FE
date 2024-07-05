@@ -33,7 +33,16 @@ const EventSearchBar = () => {
             className="px-4 py-2 focus:outline-none border-solid border-2 border-slate-200 rounded-md"
             name="location"
           >
-            <option value="kotobabi">About</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Church">Asemblies of God</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
+            <option value="Webiner">Zoom</option>
             
           </select>
         </div>

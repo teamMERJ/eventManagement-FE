@@ -26,29 +26,26 @@ const EventMgtHero = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={eventHeroImgOne} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
           <img src={eventHeroImgTwo} alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img src={eventHeroImgThree} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={eventHeroImgFour} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
           <img src={eventHeroImgFive} alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
-      <div className="absolute top-3/4 left-0 w-full z-40 flex justify-center items-center bg-black/45">
-        <div className="flex flex-col items-center">
-          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-orange-500 font-serif italic text-5xl font-medium">
-            Update
-          </h3>
-          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-400 font-serif italic text-5xl font-medium">
-            Below...
+      <div className="flex absolute top-0 left-0 w-full h-full z-40 justify-center items-center bg-black/45">
+        <div className="flex flex-col">
+          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-orange-500 font-serif italic text-5xl font-medium ">
+            Manage Your Events
           </h3>
         </div>
       </div>

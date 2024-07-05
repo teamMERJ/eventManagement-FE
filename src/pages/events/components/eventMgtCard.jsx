@@ -53,7 +53,7 @@ const EventMgtCard = ({
         </div>
         <div className="flex gap-x-2 mt-2">
           <button
-            className="bg-[#EBEEF1] text-white px-4 py-2 rounded-md hover:bg-[#C185F9]"
+            className="bg-[#77b4f1] text-white px-4 py-2 rounded-md hover:bg-[#C185F9]"
             onClick={(e) => {
               e.stopPropagation();
               onUpdate();
@@ -62,7 +62,7 @@ const EventMgtCard = ({
             Update
           </button>
           <button
-            className="bg-[#EBEEF1] text-white px-4 py-2 rounded-md hover:bg-[#FCB976]"
+            className="bg-[#eb9cd0] text-white px-4 py-2 rounded-md hover:bg-[#FCB976]"
             onClick={(e) => {
               e.stopPropagation();
               onDelete();
